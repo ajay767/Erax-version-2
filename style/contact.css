@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.nav{
+    flex-wrap: nowrap;
+}
+.logo-design {
+    position: relative;
+    width: 180px;
+}
+
+.logo-design i {
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.logo-design span {
+    position: absolute;
+    top: 11px;
+    right: 2px;
+    color: white;
+    width: 120px;
+    font-weight: 700;
+}
+
+.nav-links ul {
+    height: 50px;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.nav-links ul li a {
+    display: block;
+    height: 51px;
+    width: 75px;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding-top: 15px;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: none;
+    background-color: rgb(187, 110, 21);
+    transition: 0.3s ease;
+
+}
+
+.nav-search {
+    margin-top: 1px;
+    margin-right: 10px;
+
+}
+
+.nav-search input[type='search'] {
+    border: none;
+    border-radius: 7px;
+    padding-left: 5px;
+}
+
+.nav-search input[type='submit'] {
+    background-color: #f59d0b;
+    margin-left: 15px;
+
+    width: 85px;
+    height: 35px;
+    margin-top: 6px;
+    padding: 0px 8px;
+    margin-bottom: 10px;
+}
+
+.nav-search input[type='submit']:hover {
+    border: none;
+    width: 95px;
+    margin-left: 5px;
+    transition: 0.4s ease-in-out;
+    background-color: rgb(3, 65, 235);
+}
+
+
+
+/* section middle ==query */
+.query {
+    position: relative;
+}
+
+.bg-query {
+    width: 100%;
+    height: 550px;
+    background: url(../media/nature.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    /* background-color: red; */
+    position: absolute;
+    top: 15%;
+    width: 60%;
+    height: 70%;
+    width: 100%;
+
+    text-align: center;
+}
+
+.query-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.query-content h4 {
+    text-align: left;
+    margin-top: 14px;
+    margin-left: 16px;
+    color: #d27906;
+}
+
+.form-name input[type='text'] {
+    border: none;
+    margin-left: 17px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #ca8e07;
+    width: 236px;
+    height: 43px;
+    background: #212020;
+}
+
+.form-email-phone input[type='Email'],
+input[Type='number'] {
+
+    border: none;
+    margin-left: 17px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 236px;
+
+    border-left: 4px solid #ca8e07;
+    height: 43px;
+    background: #212020;
+    text-align: left;
+}
+
+.form-message {
+    height: 145px;
+    margin-left: 24px;
+    background: #212020;
+    border: none;
+    padding-left: 10px;
+
+    border-left: 4px solid #ca8e07;
+
+}
+
+input[type='submit'] {
+    width: 85px;
+    height: 40px;
+    background-color: #d27906;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+
+.query-form {
+    position: relative;
+
+    border-radius: 9px;
+    width: 57%;
+    height: 100%;
+    color: white;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    margin: auto;
+    margin-left: auto;
+
+}
+
+.query-address {
+    margin-left: 10px;
+    width: 33%;
+    height: 100%;
+    background-color: #d27906;
+    text-align: left;
+    color: black;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.query-address h5 {
+    width: 195px;
+
+    margin-top: 80px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+.query-address p {
+    width: 195px;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+
+
+/* footer section */
+
+
+.footer {
+    background-color: #151414;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.foot-nav {
+    margin-top: 20px;
+}
+
+.foot-nav h5 {
+    color: rgb(206, 138, 13);
+
+    font-size: 16px;
+}
+
+.foot-nav i {
+    margin-right: 5px;
+}
+
+.contact span {
+    color: rgb(206, 138, 13);
+    font-weight: 600;
+}
+
+.navigation {
+    position: absolute;
+    visibility: hidden;
+}
+
+.nav-menu {
+    position: absolute;
+    visibility: hidden;
+}
+
+.foot-nav-main {
+    font-size: 15px;
+    margin-top: 49px;
+    color: #c37806;
+
+}
+
+.foot-nav-main h5 {
+    font-size: 15px;
+}
+
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+@media  (min-width:766px) and (max-width:1024px)
+{
+
+    .nav{
+        flex-wrap: nowrap;
+    }
+    .nav-links ul li{
+        margin: 0px 5px;
+    }
+    .form-name{
+        display: flex;
+    }
+    .form-email-phone{
+        display: flex;
+    }
+    .query-form{
+        width: 80%;
+    }
+    .form-message{
+        margin-left: 18px;
+    }
+    .query-address{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    
+    }
+}
+@media (max-width:700px) {
+    
+
+    .navigation {
+        visibility: visible;
+        right: 5px;
+    }
+
+    .nav-menu {
+        visibility: hidden;
+        width: 54%;
+        height: 450px;
+        text-align: center;
+        z-index: 5;
+        position: fixed;
+        top: 55px;
+        right: 0px;
+        color: white;
+        background-color: rgb(12, 12, 12);
+        transition: 0.4s ease-in;
+    }
+
+    .nav-menu ul {
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav-menu div {
+        margin: 15px auto;
+    }
+
+    .nav-menu div input[type='submit'] {
+        border: none;
+        margin-top: 11px;
+        width: 100px;
+        height: 30px;
+        color: white;
+        font-weight: 600;
+        background-color: #ec9c09;
+
+        border-radius: 8px;
+    }
+
+    .nav-menu div input[type='search'] {
+        border: none;
+        padding-left: 5px;
+
+    }
+
+    .nav-menu ul li {
+        list-style: none;
+    }
+
+    .nav-menu ul li a {
+        display: block;
+        width: 100%;
+        height: 45px;
+        padding-top: 8px;
+        color: white;
+
+    }
+
+    .nav-menu ul li h5 {
+        font-size: 15px;
+        color: #ca8e07;
+    }
+
+    .nav-menu ul li a:hover {
+        background-color: #0f7103;
+    }
+
+    .control {
+        visibility: visible;
+    }
+
+    .navigation {
+        width: 42px;
+        height: 53px;
+    }
+
+    .navigation div {
+        width: 28px;
+        border-radius: 50px;
+        background-color: #f59d0b;
+        margin: 5px 0px;
+        height: 5px;
+    }
+
+    .navigation div:first-child {
+        margin-top: 15px;
+    }
+
+    .nav {
+        height: 55px;
+    }
+
+    .nav-links {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .nav-search {
+        width: 0px;
+        visibility: hidden;
+
+        height: 0px;
+    }
+
+    .bg-query {
+        height: 835px;
+    }
+
+    .query {
+        height: auto;
+    }
+
+    .query-form {
+        flex-direction: column;
+        width: 96%;
+        height: 96%;
+
+    }
+
+    .query-address h5 {
+        margin-top: 15px;
+    }
+
+    .form-name input[type='text'] {
+        width: 285px;
+    }
+
+    .form-email-phone,
+    .form-name {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-email-phone input[type='email'],
+    input[type='number'] {
+        width: 285px;
+    }
+
+    .form-message {
+        margin-left: 15px;
+        width: 95%;
+    }
+
+
+    .query-content {
+        width: 100%;
+        display: block;
+    }
+
+    .form-box {
+        height: auto;
+    }
+
+    .query-address {
+        width: 100%;
+        height: 200px;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0px;
+        border-radius: 9px;
+
+    }
+
+
+
+
+
+
+
+
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .foot-nav {
+        width: 48%;
+        margin-left: 12px;
+    }
+
+    .foot-nav-main {
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        color: #f59d0b;
+    }
+
+    .foot-nav-main h5 {
+        font-size: 15px;
+
+    }
+
+}

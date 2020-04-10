@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.nav{
+    flex-wrap: nowrap;
+}
+.logo-design {
+    position: relative;
+    width: 180px;
+}
+
+.logo-design i {
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.logo-design span {
+    position: absolute;
+    top: 11px;
+    right: 2px;
+    color: white;
+    width: 120px;
+    font-weight: 700;
+}
+
+.nav-links ul {
+    height: 50px;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.nav-links ul li a {
+    display: block;
+    height: 51px;
+    width: 75px;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding-top: 15px;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: none;
+    background-color: rgb(187, 110, 21);
+    transition: 0.3s ease;
+
+}
+
+.nav-search {
+    margin-top: 1px;
+    margin-right: 10px;
+
+}
+
+.nav-search input[type='search'] {
+    border: none;
+    border-radius: 7px;
+    padding-left: 5px;
+}
+
+.nav-search input[type='submit'] {
+    background-color: #f59d0b;
+    margin-left: 15px;
+
+    width: 85px;
+    height: 35px;
+    margin-top: 6px;
+    padding: 0px 8px;
+    margin-bottom: 10px;
+}
+
+.nav-search input[type='submit']:hover {
+    border: none;
+    width: 95px;
+    margin-left: 5px;
+    transition: 0.4s ease-in-out;
+    background-color: rgb(3, 65, 235);
+}
+
+.content-img{
+    margin-bottom: 50px;
+}
+.content-img img{
+width: 150px;
+}
+.info h4{
+    color: #e06209;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #151414;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.foot-nav {
+    margin-top: 20px;
+}
+
+.foot-nav h5 {
+    color: rgb(206, 138, 13);
+
+    font-size: 16px;
+}
+
+.foot-nav i {
+    margin-right: 5px;
+}
+
+.contact span {
+    color: rgb(206, 138, 13);
+    font-weight: 600;
+}
+
+.navigation {
+    position: absolute;
+    visibility: hidden;
+}
+
+.nav-menu {
+    position: absolute;
+    visibility: hidden;
+}
+
+.foot-nav-main {
+    font-size: 15px;
+    margin-top: 49px;
+    color: #c37806;
+
+}
+
+.foot-nav-main h5 {
+    font-size: 15px;
+}
+
+@media (max-width:750px){
+    .navigation{
+        visibility: visible;
+    }
+    .control{
+        visibility: visible;
+        position: fixed;
+    }
+}
